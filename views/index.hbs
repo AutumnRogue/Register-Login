@@ -1,0 +1,47 @@
+<div class = 'intro'>Register:</div>
+<form action="/insert" method="post" class='register'>
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+  </div>
+  <div>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email">
+  </div>
+  <div>
+    <label for="telephone">Phone-Number:</label>
+    <input type="text" id="telephone" name="telephone">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input id="password" type="password" name="password">
+  </div>
+  <input type="submit" value="Submit">
+</form>
+
+<br>
+
+<div class = 'intro'>Login:</div>
+
+<form action="/" method="post" class = 'login'>
+  <div>
+    <label for="email">Email:</label>
+    <input type="text" id="name" name="email">
+  </div>
+  <div>
+    <label for="passwordEnter">Password:</label>
+    <input type="password" id="name" name="passwordEnter">
+  </div>
+  <input type="submit" value="Submit">
+</form>
+
+
+<div id="data">
+  <p class="info">{{details}}</p>
+  <p class="info">{{name}}</p>
+  <p class="info">{{email}}</p>
+  <p class="info">{{telephone}}</p>
+  <p class="info">{{password}}</p>
+  <p class="info">{{hashkey}}</p>
+  <p class="info">{{output}}</p>
+</div>
