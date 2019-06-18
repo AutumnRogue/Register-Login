@@ -1,41 +1,42 @@
-<div class = 'intro'>Register:</div>
-<form action="/insert" method="post" class='register'>
-  <div>
+<div id='header'>
+<div id = 'register1'>Register</div>
+<div id = 'login1'>Login</div>
+</div>
+
+<div class='userInput'>
+<form action="/insert" method="post" id='register'>
+  <div id='name1'>
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name">
+    <input type="text" name="name" class = 'input'>
   </div>
-  <div>
+  <div id='email1'>
     <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email">
+    <input type="email" name="email" class = 'input'>
   </div>
-  <div>
+  <div id='phone1'>
     <label for="telephone">Phone-Number:</label>
-    <input type="text" id="telephone" name="telephone">
+    <input type="text" name="telephone" class = 'input'>
   </div>
-  <div>
-    <label for="password">Password</label>
-    <input id="password" type="password" name="password">
+  <div id='password1'>
+    <label for="password">Password:</label>
+    <input type="password" name="password" class = 'input'>
   </div>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" class = 'button'>
 </form>
 
-<br>
 
-<div class = 'intro'>Login:</div>
 
-<form action="/" method="post" class = 'login'>
+<form action="/account" method="post" id= 'login'>
   <div>
     <label for="email">Email:</label>
-    <input type="text" id="name" name="email">
+    <input type="text"  name="email" class = 'input'>
   </div>
   <div>
     <label for="passwordEnter">Password:</label>
-    <input type="password" id="name" name="passwordEnter">
+    <input type="password" name="passwordEnter" class = 'input'>
   </div>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" class = 'button' id='button1'>
 </form>
-
-
 <div id="data">
   <p class="info">{{details}}</p>
   <p class="info">{{name}}</p>
@@ -45,3 +46,7 @@
   <p class="info">{{hashkey}}</p>
   <p class="info">{{output}}</p>
 </div>
+
+</div>
+
+

@@ -51,7 +51,7 @@ app.post('/insert',async(req,res)=>{
 
     res.render('index')
 });
-app.post('/', async (req, res) => {        
+app.post('/account', async (req, res) => {        
     let email = req.body.email;
     let passwordEnter = req.body.passwordEnter;   
     let result = await sql.fetch(email);

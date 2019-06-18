@@ -1,11 +1,85 @@
 body {
     height: 100vh;
     width: 100%;
-    background-color: aquamarine;
+    background-color: aqua;
 }
 
-.intro {
-    height: 10vh;
-    width: 50%
+#header {
+    display: flex;
+    height: 5%;
+    width: 100%;
+    align-content: center;
+    justify-content: flex-end;
+}
+#register1 {
+    display: flex;
+    padding-right: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    color: aliceblue;
+    font-weight: bold;
+}
+#login1 {
+    display: flex;
+    padding-right: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.userInput {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+
+#register {
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    align-items: center;
+    display: none;
+    justify-content: center;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    align-items: center;
+    display: none;
+}
+
+.input {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.button {
+    width: 50%;
+}
+
+.info {
+    color: gray;
+}
+/* #name1 {
+    display: flex;
+    flex-direction: row;
+}
+#email1 {
+    display: flex;
+    flex-direction: row;
+}
+#phone1 {
+    display: flex;
+    flex-direction: row;
+}
+#password1 {
+    display: flex;
+    flex-direction: row;
+} */
