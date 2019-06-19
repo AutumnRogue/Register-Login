@@ -3,6 +3,18 @@
 <div id = 'login1'>Login</div>
 </div>
 
+<div class='background'>
+  <div id='back1'></div>
+  <div id='back2'></div>
+  <div id='back3'></div>
+  <div id='back4'></div>
+  <div id='back5'></div>
+  <div id='back6'></div>
+  <div id='back7'></div>
+  <div id='arcanine'></div>
+
+</div>
+
 <div class='userInput'>
 <form action="/insert" method="post" id='register'>
   <div id='name1'>
@@ -21,7 +33,7 @@
     <label for="password">Password:</label>
     <input type="password" name="password" class = 'input'>
   </div>
-  <input type="submit" value="Submit" class = 'button'>
+  <input type="submit" value="Submit" id= 'button1'>
 </form>
 
 
@@ -35,15 +47,16 @@
     <label for="passwordEnter">Password:</label>
     <input type="password" name="passwordEnter" class = 'input'>
   </div>
-  <input type="submit" value="Submit" class = 'button' id='button1'>
+  <input type="submit" value="Submit" id = 'button2'>
 </form>
+
 <div id="data">
   <p class="info">{{details}}</p>
   <p class="info">{{name}}</p>
   <p class="info">{{email}}</p>
   <p class="info">{{telephone}}</p>
   <p class="info">{{password}}</p>
-  <p class="info">{{hashkey}}</p>
+  {{!-- <p class="info">{{hashkey}}</p> --}}
   <p class="info">{{output}}</p>
 </div>
 

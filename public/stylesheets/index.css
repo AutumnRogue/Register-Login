@@ -1,7 +1,10 @@
 body {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-color: aqua;
+    background-color: aliceblue;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
 }
 
 #header {
@@ -29,21 +32,29 @@ body {
 }
 
 .userInput {
-    height: 90vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: violet; */
+    padding: 0%;
     
 }
 
 #register {
+    /* height: 22%; */
+    /* width: 15%; */
     display: flex;
     flex-direction: column;
     color: gray;
     align-items: center;
     display: none;
     justify-content: center;
+    /* background-color: aliceblue; */
+    /* padding: 2%; */
+    /* border-radius: 5%; */
+    z-index: 1;
 }
 
 #login {
@@ -52,16 +63,33 @@ body {
     color: gray;
     align-items: center;
     display: none;
+    justify-content: center;
+    /* background-color: aliceblue;
+    padding: 2%;
+    border-radius: 5%; */
+    z-index: 1;
 }
 
 .input {
     display: flex;
     justify-content: flex-end;
+    width: 100%;
     
 }
 
-.button {
-    width: 50%;
+#button1 {
+    position: absolute;
+    width: 5.5%;
+    padding: 10%;
+    left: 47.5%;
+    top: 40%;
+}
+#button2 {
+    position: absolute;
+    width: 5.5%;
+    padding: 10%;
+    left: 47.5%;
+    top: 35.25%;
 }
 
 .info {
@@ -83,3 +111,170 @@ body {
     display: flex;
     flex-direction: row;
 } */
+
+#data {
+    /* display: none; */
+    /* display: flex; */
+    /* width: 20%; */
+    flex-direction: column;
+    color: gray;
+    /* align-items: center; */
+    justify-content: center;
+    /* background-color: aliceblue; */
+    /* padding: 2%; */
+    /* border-radius: 5%; */
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+#back1 {
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    height: 100%;
+    width: 300%;
+    background-image: url('./images/parabck1cc.png');
+    z-index: -1;
+    animation-name: left;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0, 1.0, 1.0, 1.0);
+    background-size: 100% 100%;
+    
+    
+}
+#back2 {
+    left: 0%;
+    top: -1%;
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    background-image: url('./images/parabck2cc.png');
+    z-index: -2;
+    animation-name: left;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0, 1.0, 1.0, 1.0);
+    background-size: 100% 100%;
+    
+}
+#back3 {
+    left: 0%;
+    top: -5%;
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    background-image: url('./images/parabck3cc.png');
+    z-index: -3;
+    animation-name: left;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0, 1.0, 1.0, 1.0);
+    background-size: 100% 100%;
+    
+}
+#back4 {
+    left: 0%;
+    top: -5%;
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    background-image: url('./images/parabck4cc.png');
+    z-index: -4;
+    animation-name: left;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0, 1.0, 1.0, 1.0);
+    background-size: 100% 100%;
+    
+}
+#back5 {
+    left: 0%;
+    top: -5%;
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    background-image: url('./images/parabck5cc.png');
+    z-index: -5;
+    animation-name: left;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0, 1.0, 1.0, 1.0);
+    background-size: 100% 100%;
+    
+}
+#back6 {
+    left: 0%;
+    top: 15%;
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    background-image: url('./images/parabck6cc.png');
+    z-index: -6;
+    animation-name: left;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0, 1.0, 1.0, 1.0);
+    background-size: 100% 100%;
+    
+}
+#back7 {
+    left: 0%;
+    top: -5%;
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    background-image: url('./images/parabck7cc.png');
+    z-index: -7;
+    animation-name: left;
+    animation-duration: 400s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0, 1.0, 1.0, 1.0);
+    background-size: 100% 100%;
+    
+}
+#arcanine {
+    position: absolute;
+    left: 20%;
+    top: 77%;
+    background-image: url('./images/arcanine1.gif');
+    z-index: 3;
+    height: 22%;
+    width: 15%;
+    background-size: 100% 100%;
+    animation-name: right;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0, 1.0, 1.0, 1.0);
+
+    
+}
+
+@keyframes left {
+    
+   
+    0% {
+        position: absolute;
+        left: 0%
+    }
+    100% {
+        position: absolute;
+        left: -195%
+    }
+}
+
+@keyframes right {
+    0% {
+        position: absolute;
+        left: -10%
+    }
+    100% {
+        position: absolute;
+        left: 120%;
+    }
+}

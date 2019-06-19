@@ -60,12 +60,12 @@ app.post('/account', async (req, res) => {
     
     if(await compare(passwordEnter,result.password)){
     res.render('index',{
-        details: 'Your details:',
+        details: '  Your details:',
         name:'Username: ' + result.username,
         email:'Email: ' + result.email,
         telephone:'Mobile: ' + result.telephone,
         password: 'Password: ' + passwordEnter,
-        hashkey: 'Hashkey: ' + result.password
+        // hashkey: 'Hashkey: ' + result.password
     });
     }else{
         res.render('index',{
@@ -80,3 +80,6 @@ app.post('/account', async (req, res) => {
 app.listen(1337, () => {
     console.log("listening on port 1337")
 })
+
+
+/// send data to a json then access it from frontend with fetch
